@@ -1,6 +1,10 @@
 /* Import font from google */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
-
+*{
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
 
 body{
    background-color: rgb(200,200,200);
@@ -38,9 +42,9 @@ h1,h2,h3,h4,h5,h6{
 #menu li{
    display:inline;
 }
+
 .destaques li{
-   width: 50%;
-   
+   width: 100%;
    float: left;
    text-align: center;
    list-style: none;
@@ -57,8 +61,8 @@ h1,h2,h3,h4,h5,h6{
 }
 .destaques li strong{
    width: 100%;
-   display: inline;
-   text-align: center;
+   display: block;
+   
 }
 .center{
    text-align: center;
@@ -106,7 +110,9 @@ button{
 }
 #rodape li {display: inline;
 }
-@media screen and (max-width: 768px){
+
+
+@media (min-width: 480px){
    .topo h1{
       object-fit: contain;
       object-position: center;
@@ -115,21 +121,18 @@ button{
       object-fit: contain;
       object-position: center;
       
-   }
-   #destaques li{
-      
-      float: none;
-      
-      width: 100%;
-      
-      
-   }
-   #destaques li strong{
+   }*/
+   .destaques li{
+      width: 50%;
+      float: left;
       text-align: center;
-      
+      list-style: none;
+      padding: 50px 0px;
+   
    }
    
 }
+
 @media screen and (max-width: 600px){
    .topo h1 h2{
       object-fit: contain;
@@ -139,12 +142,7 @@ button{
       object-fit: contain;
       object-position: center;
    }
-   #destaques li{
-      float: none;
-      
-      width: 100%;
-      
-   }
+  
    .rodape li{
       display: none;
       object-fit: contain;
@@ -152,12 +150,7 @@ button{
       text-align: center;
       padding: 0%;
    }
-   #destaques li strong{
-      text-align: center;
-      object-fit: contain;
-      object-position: center;
-   }
    
 }
-
+*/
 
